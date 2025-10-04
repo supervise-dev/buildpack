@@ -6,19 +6,146 @@ version = "1.0.0"
 name = "Supervise Buildpacks"
 homepage = "https://supervise.dev"
 
+# Python
 [[order]]
+[[order.group]]
+id = "heroku/python"
+version = "2.5.1"
 [[order.group]]
 id = "dev.supervise.pkgx"
 version = "1.0.0"
-
 [[order.group]]
 id = "dev.supervise.caddy"
 version = "1.0.0"
-
 [[order.group]]
 id = "dev.supervise.ttyd"
 version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
 
+# Ruby
+[[order]]
+[[order.group]]
+id = "heroku/ruby"
+version = "12.1.0"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# Java
+[[order]]
+[[order.group]]
+id = "heroku/java"
+version = "7.0.5"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# Scala
+[[order]]
+[[order.group]]
+id = "heroku/scala"
+version = "7.0.5"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# Go
+[[order]]
+[[order.group]]
+id = "heroku/go"
+version = "2.1.2"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# PHP
+[[order]]
+[[order.group]]
+id = "heroku/php"
+version = "1.0.9"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# .NET
+[[order]]
+[[order.group]]
+id = "heroku/dotnet"
+version = "0.9.1"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.runtime"
+version = "1.0.0"
+
+# Node.js (intentionally last, as projects in other languages often have package.json)
+[[order]]
+[[order.group]]
+id = "heroku/nodejs"
+version = "5.1.2"
+[[order.group]]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+[[order.group]]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
 [[order.group]]
 id = "dev.supervise.runtime"
 version = "1.0.0"

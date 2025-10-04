@@ -2,6 +2,30 @@
 uri = "."
 
 [[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-nodejs@sha256:0041192e2f639bd1d2b72c26de57c70b7857deed10166dbc6c6d5ab05f946f0e"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-python@sha256:75460943705956d99e2ac020870424f0b95fe0173821a7fcdfd1a2bacecb5865"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-ruby@sha256:9e3cf59d698c39713bb27d205353b05fba45ccfd0271cc02a5de1ac073b3ced8"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-go@sha256:3f30c252f9c6708763ed3f8206220ad1e29b88342e7d12e32cd96f33c880140e"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-java@sha256:a718e50c69d2500f0374e8f89338a8a2e96a3553798e1e696afa3858c3f0c23b"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-php@sha256:cb04fdd185a5448587433b2cba810f2ef56180de4f0461325825c82e8e41a43e"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-scala@sha256:0f6d5a1a73ce317de16091bdfce1d620d6cb7a88b7de5182c534ac91aca80e32"
+
+[[dependencies]]
+uri = "docker://docker.io/heroku/buildpack-dotnet@sha256:152155e7e5b2ddfc6ad2b7ff4f11a13799d8ff81da2013bf5f87faa82da0d318"
+
+[[dependencies]]
 uri = "./pkgx"
 
 [[dependencies]]

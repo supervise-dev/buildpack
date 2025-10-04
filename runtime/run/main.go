@@ -24,10 +24,9 @@ func main() {
 }
 
 func detect(context packit.DetectContext) (packit.DetectResult, error) {
-	err := exec.Command("chmod", "-R", "a+w", context.WorkingDir).Run()
-	if err != nil {
-		return packit.DetectResult{}, err
-	}
+	// Always pass detection - runtime is always required
+	// Attempt to make working directory writable, but don't fail if it errors
+	_ = exec.Command("chmod", "-R", "a+w", context.WorkingDir).Run()
 	return packit.DetectResult{}, nil
 }
 
