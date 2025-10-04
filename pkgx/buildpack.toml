@@ -1,0 +1,15 @@
+api = "0.10"
+
+[buildpack]
+id = "dev.supervise.pkgx"
+version = "1.0.0"
+name = "Supervise pkgx runtime"
+homepage = "https://supervise.dev"
+
+[[targets]]
+os = "linux"
+arch = "amd64"
+
+[[targets]]
+os = "linux"
+arch = "arm64"

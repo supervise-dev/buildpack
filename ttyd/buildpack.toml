@@ -1,0 +1,15 @@
+api = "0.10"
+
+[buildpack]
+id = "dev.supervise.ttyd"
+version = "1.0.0"
+name = "Supervise ttyd runtime"
+homepage = "https://supervise.dev"
+
+[[targets]]
+os = "linux"
+arch = "amd64"
+
+[[targets]]
+os = "linux"
+arch = "arm64"

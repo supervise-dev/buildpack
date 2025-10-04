@@ -1,0 +1,14 @@
+[buildpack]
+uri = "."
+
+[[dependencies]]
+uri = "./pkgx"
+
+[[dependencies]]
+uri = "./caddy"
+
+[[dependencies]]
+uri = "./ttyd"
+
+[[dependencies]]
+uri = "./runtime"

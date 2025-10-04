@@ -1,0 +1,15 @@
+api = "0.10"
+
+[buildpack]
+id = "dev.supervise.caddy"
+version = "1.0.0"
+name = "Caddy with JWT Support"
+homepage = "https://supervise.dev"
+
+[[targets]]
+os = "linux"
+arch = "amd64"
+
+[[targets]]
+os = "linux"
+arch = "arm64"

@@ -1,0 +1,25 @@
+{
+	# Global options
+	admin off
+	#	order jwtauth before reverse_proxy
+}
+
+# Main reverse proxy configuration
+:4040 {
+	#	# JWT validation middleware (only when enabled)
+	#	@auth_enabled `{$ENABLE_JWT_AUTH:false}` == "true"
+	#
+	#	jwtauth @auth_enabled {
+	#		# For development with symmetric key (256-bit base64 encoded):
+	#		jwk_url {$JWKS_URL}
+	#		issuer_whitelist {$JWT_ISSUER}
+	#		audience_whitelist {$JWT_AUDIENCE}
+	#		from_header Authorization
+	#		from_query token
+	#	}
+
+	# Serve ttyd directly at root
+	reverse_proxy unix//tmp/ttyd/ttyd.sock {
+		header_up X-WEBAUTH-USER supervise
+	}
+}
